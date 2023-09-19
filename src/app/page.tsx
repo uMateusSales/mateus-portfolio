@@ -1,5 +1,4 @@
 import DescriptionMap from "@/components/DescriptionMap";
-import Image from "next/image";
 import Link from "next/link";
 
 function SectionHeaderText(props) {
@@ -10,14 +9,12 @@ function SectionHeaderText(props) {
 export default function Home() {
   return (
     <main className="flex flex-col gap-5 p-4 mx-auto max-w-[900px] w-full">
-      
       <h2 className="font-bold sm:py-4 md:py-8 text-4xl sm:text-5xl md:text-6xl">
-        Mateus lins Sales
+        Mateus Lins Sales
       </h2>
+      <p>Desenvolvedor Javascript</p>
       <section>
-        <SectionHeaderText>
-         Desenvolvedor Javascript
-        </SectionHeaderText>
+        <SectionHeaderText></SectionHeaderText>
         <DescriptionMap />
       </section>
       <section>
