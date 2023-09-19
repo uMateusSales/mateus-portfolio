@@ -1,0 +1,28 @@
+import React from 'react'
+import Link from 'next/link'
+const Footer = () => {
+  return (
+    <footer className='flex flex-col  p-4 py-16 text-xs text-slate-600 sm:text-sm border-t items-center justify-center gap-6'>
+    <div className='flex items-center justify-center gap-4'>
+      <a  download href={'/MateusCurriculo.pdf'} className='cursor-pointer hover:opacity-60 duration-200'> Meu curriculo</a >
+      <p>|</p>
+      <Link href={'/projects'} className='cursor-pointer hover:opacity-60 duration-200'>Projects</Link>
+      <p>|</p>
+      <a className='cursor-pointer hover:opacity-60 duration-200'>Blog</a>
+    </div>
+    <div className='flex items-center justify-center gap-4 text-lg sm:text-xl'>
+      <a className='cursor-pointer hover:opacity-60 duration-200'  href={'https://www.linkedin.com/in/mateus-lins-061a5424a/'} target="_blank">
+        <i className="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a className='cursor-pointer hover:opacity-60 duration-200' href={'https://github.com/uMateusSales'} target="_blank">
+        <i className="fa-brands fa-github"></i>
+      </a>
+      <a className='cursor-pointer hover:opacity-60 duration-200' href={'mailto:mateus.lins.sales@gmail.com'}  target="_blank">
+      <i className="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
+  )
+}
+
+export default Footer

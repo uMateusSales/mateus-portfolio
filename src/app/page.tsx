@@ -10,12 +10,13 @@ function SectionHeaderText(props) {
 export default function Home() {
   return (
     <main className="flex flex-col gap-5 p-4 mx-auto max-w-[900px] w-full">
+      
       <h2 className="font-bold sm:py-4 md:py-8 text-4xl sm:text-5xl md:text-6xl">
-        Digital Résumé
+        Mateus lins Sales
       </h2>
       <section>
         <SectionHeaderText>
-          James McArthur - Web Developer and Educator
+         Desenvolvedor Javascript
         </SectionHeaderText>
         <DescriptionMap />
       </section>
