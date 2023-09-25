@@ -6,7 +6,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import "swiper/css";
 
 interface ProjeactCardProps {
@@ -26,7 +32,7 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
     <>
       <Swiper
         className="flex min-h-[350px] max-w-full  sm:flex sm:flex-1 relative"
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}

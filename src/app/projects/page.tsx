@@ -1,7 +1,15 @@
 import { ProjectCard } from "@/components/ProjectCard";
 
+type Project = {
+  titulo: string;
+  link: string;
+  desc: string;
+  videoLink: string;
+  fotos: string[];
+};
+
 export default function ProjectsPage() {
-  const projects = [
+  const projects: Project[] = [
     {
       titulo: "Site da Roltec",
       link: "https://roltec.vercel.app",
@@ -29,15 +37,28 @@ export default function ProjectsPage() {
       videoLink: "video.mov",
       fotos: ["/nerd-front.png", "/nerd-2.png", "/nerd-3.png", "/nerd-4.png"],
     },
+    {
+      titulo: "Pagina do purificador Clarifion",
+      link: "https://clarifion-upsell-ejam-mateus.vercel.app/",
+      desc: "Teste para vaga de fullstack aplicado pela Ejam, trata-se de uma pagina para procedimento de pagamento do produto e a proposta era melhorar a UI para gerar um desejo de upsell melhor para o produto",
+      videoLink: "",
+      fotos: ["/clarifion-1.png", "/clarifion-2.png", "/clarifion-3.png"],
+    },
   ];
 
   return (
     <main className="flex flex-col flex-1 bg-slate-100">
+      <div className="flex justify-center my-8">
+        <h1 className="text-3xl font-extrabold">
+          Projetos mais recentes em que trabalhei
+        </h1>
+      </div>
+
       {projects.map((i, index) => {
         return (
           <div
             className={
-              "flex " +
+              "flex border rounded p-1 " +
               (index % 2 === 0
                 ? "flex-col sm:flex-row"
                 : "flex-col sm:flex-row-reverse")
