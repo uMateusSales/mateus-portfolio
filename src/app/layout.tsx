@@ -1,11 +1,11 @@
 import Link from "next/link";
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Poppins, Rajdhani } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const poppins = Poppins({
-  weight: ["100", "300", "400", "500", "700", "900"],
+const poppins = Rajdhani({
+  weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
 });
 

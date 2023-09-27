@@ -56,7 +56,7 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
         ))}
         <div className="swiper-pagination"></div>
       </Swiper>
-      <div className="flex flex-col flex-1 justify-center items-center">
+      <div className="flex flex-col flex-1 justify-center items-center transition-opacity ease-in duration-300 opacity-100 hover:opacity-60 ">
         <Link
           className="duration-200 hover:opacity-60 p-4 sm:p-6"
           href={link}
