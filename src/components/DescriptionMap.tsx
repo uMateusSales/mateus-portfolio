@@ -19,11 +19,7 @@ export default function DescriptionMap() {
   const skills = [
     {
       name: "JavaScript",
-      content: ["React", "React Native", "SvelteKit", "Node.js"],
-    },
-    {
-      name: "Python",
-      content: ["Data Analysis", "Django", "Flask", "Data Visualization"],
+      content: ["React", "React Native", "Next.js", "Node.js"],
     },
     {
       name: "Web",
@@ -44,57 +40,21 @@ export default function DescriptionMap() {
     { name: "Design", content: ["Canvas", "Pixlr", "Figma"] },
   ];
 
-  const workHistory = [
-    {
-      name: "Zetane Systems (2021 - Present)",
-      content: "Developer,...........",
-    },
-    {
-      name: "Zetane Systems (2021 - Present)",
-      content: "Developer,...........",
-    },
-    {
-      name: "Zetane Systems (2021 - Present)",
-      content: "Developer,...........",
-    },
-    {
-      name: "Zetane Systems (2021 - Present)",
-      content: "Developer,...........",
-    },
-  ];
-
-  const hobbies = [
-    {
-      name: "Making coding videos",
-      content: "I really really really really really enjoy programming",
-    },
-    {
-      name: "Making coding videos",
-      content: "I really really really really really enjoy programming",
-    },
-    {
-      name: "Making coding videos",
-      content: "I really really really really really enjoy programming",
-    },
-    {
-      name: "Making coding videos",
-      content: "I really really really really really enjoy programming",
-    },
-  ];
-
   return (
     <div className="flex flex-col gap-3">
-      {links.map((i, index) => {
+      {skills.map((i, index) => {
         return (
           <div
             className="relative group overflow-hidden  flex items-center gap-1.5 flex-wrap text-xs sm:text-sm"
             key={index}
           >
-            <div className="bg-purple-400 duration-300 group-hover:translate-x-full h-[2px] w-full absolute right-full bottom-0"></div>
             <p>
               <b>{i.name}</b>
             </p>
-            {i.content}
+            {i.content.map((i) => (
+              <p>{i}</p>
+            ))}
+            <div className="bg-purple-400 duration-500 group-hover:translate-x-full h-0.5 w-full absolute right-full bottom-0"></div>
           </div>
         );
       })}

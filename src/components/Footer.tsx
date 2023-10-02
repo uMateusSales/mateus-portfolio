@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="flex flex-col  p-4 py-16 text-xs text-slate-600 sm:text-sm border-t items-center justify-center gap-6">
+    <footer className=" bg-slate-400 flex flex-col  p-4 py-16 text-xs text-neutral-950 sm:text-sm border-t items-center justify-center gap-6">
       <div className="flex items-center justify-center gap-4">
         <a
           download

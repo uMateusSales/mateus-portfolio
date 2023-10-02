@@ -17,7 +17,7 @@ import "swiper/css";
 
 interface ProjeactCardProps {
   titulo: string;
-  desc: string;
+  desc?: string;
   fotos?: string[];
   link: string;
 }
@@ -32,13 +32,13 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
     <>
       <Swiper
         className="flex min-h-[350px] max-w-full  sm:flex sm:flex-1 relative"
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         navigation
-        pagination={true}
+        autoplay
         loop={true}
       >
         {fotos?.map((i) => (

@@ -1,4 +1,6 @@
 import DescriptionMap from "@/components/DescriptionMap";
+import MainTitle from "@/components/MainTitle";
+import { ProjectCard } from "@/components/ProjectCard";
 import Link from "next/link";
 
 function SectionHeaderText(props) {
@@ -6,17 +8,19 @@ function SectionHeaderText(props) {
   return <h4 className="pb-5 text-xl font-semibold">{children}</h4>;
 }
 
+const projetos = {
+  titulo: "Projetos",
+  fotos: ["/roltec-front.png", "/nerd-front.png", "/clarifion-1.png"],
+};
+
 export default function Home() {
   return (
-    <main className="flex flex-col gap-5 p-4 mx-auto max-w-[900px] w-full">
-      <h2 className="font-bold sm:py-4 md:py-8 text-4xl sm:text-5xl md:text-6xl">
-        Mateus Lins Sales
-      </h2>
-      <p>Desenvolvedor Javascript</p>
-      <section>
-        <SectionHeaderText></SectionHeaderText>
-        <DescriptionMap />
-      </section>
+    <main className="flex flex-col gap-5 p-4 mx-auto max-w-4xl w-full">
+      <MainTitle
+        titulo="Mateus Lins Sales"
+        subtitulo="Desenvolvedor front end"
+      />
+
       <section>
         <SectionHeaderText>Skills</SectionHeaderText>
 
@@ -25,18 +29,11 @@ export default function Home() {
       <section>
         <SectionHeaderText>Projects</SectionHeaderText>
 
-        <p className="text-xs sm:text-sm">
-          Check out my latest{" "}
-          <Link href={"/projects"} className="text-sky-400">
-            projects
-          </Link>
-        </p>
-      </section>
-
-      <section>
-        <SectionHeaderText>Just For Fun</SectionHeaderText>
-
-        <DescriptionMap />
+        <ProjectCard
+          titulo={projetos.titulo}
+          link="/projects"
+          fotos={projetos.fotos}
+        />
       </section>
     </main>
   );

@@ -1,7 +1,7 @@
 {
-  "name": "dev-portfolio",
+  "name": "mateus-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,15 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-separator": "^1.0.3",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
+    "lucide-react": "^0.279.0",
     "next": "13.4.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swiper": "^10.2.0",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "5.1.3"
   },
   "devDependencies": {
