@@ -6,13 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 
 interface ProjeactCardProps {
@@ -32,33 +26,38 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
     <>
       <Swiper
         className="flex min-h-[350px] max-w-full  sm:flex sm:flex-1 relative"
-        modules={[Autoplay]}
+        modules={[Pagination]}
         spaceBetween={10}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         navigation
-        autoplay
+        pagination={true}
         loop={true}
       >
         {fotos?.map((i) => (
           <SwiperSlide className="min-h-[350px] mr-0 ">
-            <Image
-              fill
-              quality={100}
-              style={{ objectFit: "contain" }}
-              alt="foto do projeto"
-              src={i}
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNsrAcAAYcBArSMKU4AAAAASUVORK5CYII="
-            />
+            <div className="flex">
+              <Image
+                fill
+                quality={95}
+                style={{ objectFit: "scale-down" }}
+                alt="foto do projeto"
+                src={i}
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNsrAcAAYcBArSMKU4AAAAASUVORK5CYII="
+              />
+            </div>
           </SwiperSlide>
         ))}
         <div className="swiper-pagination"></div>
       </Swiper>
-      <div className="flex flex-col flex-1 justify-center items-center transition-opacity ease-in duration-300 opacity-100 hover:opacity-60 ">
+      <div
+        key={titulo}
+        className="flex flex-col flex-1 justify-center items-center  "
+      >
         <Link
-          className="duration-200 hover:opacity-60 p-4 sm:p-6"
+          className="transition-opacity ease-in duration-300 opacity-100 hover:opacity-60 p-4 sm:p-6"
           href={link}
           target="_blank"
         >
