@@ -1,6 +1,7 @@
 import DescriptionMap from "@/components/DescriptionMap";
 import MainTitle from "@/components/MainTitle";
 import { ProjectCard } from "@/components/ProjectCard";
+import ProjectSection from "@/components/ProjectSection";
 import Link from "next/link";
 
 function SectionHeaderText(props) {
@@ -29,11 +30,7 @@ export default function Home() {
       <section>
         <SectionHeaderText>Projects</SectionHeaderText>
 
-        <ProjectCard
-          titulo={projetos.titulo}
-          link="/projects"
-          fotos={projetos.fotos}
-        />
+        <ProjectSection />
       </section>
     </main>
   );
