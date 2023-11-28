@@ -1,18 +1,8 @@
 import DescriptionMap from "@/components/DescriptionMap";
 import MainTitle from "@/components/MainTitle";
-import { ProjectCard } from "@/components/ProjectCard";
-import ProjectSection from "@/components/ProjectSection";
-import Link from "next/link";
 
-function SectionHeaderText(props) {
-  const { children } = props;
-  return <h4 className="pb-5 text-xl font-semibold">{children}</h4>;
-}
-
-const projetos = {
-  titulo: "Projetos",
-  fotos: ["/roltec-front.png", "/nerd-front.png", "/clarifion-1.png"],
-};
+import ProjectsPage from "./projects/page";
+import ProjectsSection from "@/components/ProjectSection";
 
 export default function Home() {
   return (
@@ -23,14 +13,11 @@ export default function Home() {
       />
 
       <section>
-        <SectionHeaderText>Skills</SectionHeaderText>
-
+        <h4 className="pb-5 text-xl font-semibold">Skills</h4>;
         <DescriptionMap />
       </section>
       <section>
-        <SectionHeaderText>Projects</SectionHeaderText>
-
-        <ProjectSection />
+        <ProjectsSection />
       </section>
     </main>
   );
