@@ -40,7 +40,7 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
         loop={true}
       >
         {fotos?.map((i) => (
-          <SwiperSlide className="min-h-[350px] mr-0 ">
+          <SwiperSlide key={i} className="min-h-[350px] mr-0 ">
             <div className="flex">
               <Image
                 fill

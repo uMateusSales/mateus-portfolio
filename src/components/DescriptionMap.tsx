@@ -18,26 +18,28 @@ export default function DescriptionMap() {
 
   const skills = [
     {
-      name: "JavaScript",
-      content: ["React", "React Native", "Next.js", "Node.js"],
+      name: "Linguagens",
+      content: ["Javascript", "Typescript"],
     },
     {
-      name: "Web",
+      name: "Front-end",
       content: [
-        "Sass",
-        "TailwindCSS",
-        "Firebase",
-        "NoSQL",
-        "SQL",
-        "Netlify",
-        "AWS",
-        "GCP",
-        "GIT",
-        "DOCKER",
-        "Kubernetes",
+        "React",
+        "Nextjs 13",
+        "React Hooks",
+        "Redux toolkit e Zustand",
+
+        ,
       ],
     },
-    { name: "Design", content: ["Canvas", "Pixlr", "Figma"] },
+    {
+      name: "Back-end",
+      content: ["Nodejs, Fastify, Express, Nestjs"],
+    },
+    {
+      name: "Design",
+      content: ["TailwindCSS", "Styled-components", "MaterialUI", "Figma"],
+    },
   ];
 
   return (
@@ -46,13 +48,13 @@ export default function DescriptionMap() {
         return (
           <div
             className="relative group overflow-hidden  flex items-center gap-1.5 flex-wrap text-xs sm:text-sm"
-            key={index}
+            key={i.name}
           >
             <p>
               <b>{i.name}</b>
             </p>
             {i.content.map((i) => (
-              <p>{i}</p>
+              <p key={i}>{i}</p>
             ))}
             <div className="bg-purple-400 duration-500 group-hover:translate-x-full h-0.5 w-full absolute right-full bottom-0"></div>
           </div>

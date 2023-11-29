@@ -22,8 +22,17 @@ const MainTitle: React.FC<MainTitleProps> = ({ titulo, subtitulo }) => {
       <CardHeader>
         <CardTitle>{titulo}</CardTitle>
         <CardDescription>{subtitulo}</CardDescription>
-        <CardDescription>
-          Pequeno resumo de bla bla bla de minha formação e trabalhos
+        <CardDescription className="font-medium">
+          <br></br>
+          Possuo experiência com:
+          <br></br>• ReactJS: React Hooks, gerenciamento de estados com
+          ContextAPI, Redux e Zustand
+          <br></br>• Node.js (Fastify & Express): Experiência em desenvolvimento
+          backend, aproveitando os recursos do Node.js para construir soluções
+          de servidores escaláveis e eficientes.
+          <br></br>• Next.js: Minha ferramenta preferida para desenvolvimento
+          fullstack. O utilizando para criar aplicativos de alto desempenho com
+          SSR com recursos aprimorados de SEO.
         </CardDescription>
       </CardHeader>
       <Separator
@@ -31,11 +40,11 @@ const MainTitle: React.FC<MainTitleProps> = ({ titulo, subtitulo }) => {
         orientation="vertical"
       />
       <CardContent>
-        <div className="flex mt-2">
+        <div className="flex mt-2 self-center">
           <Image
             alt="notebook"
             style={{ objectFit: "contain", borderRadius: 5 }}
-            src="/971.jpg"
+            src="/ai-print.png"
             width={500}
             height={500}
           />

@@ -11,7 +11,8 @@ const poppins = Rajdhani({
 
 export const metadata = {
   title: "Mateus Sales",
-  description: "Site de Mateus Sales para portfolio de apresentação",
+  description:
+    "Sou Mateus Lins Sales, desenvolvedor front end e este é meu site portfolio com meus sistemas e sites ja feitos",
 };
 
 export default function RootLayout({

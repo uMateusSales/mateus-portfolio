@@ -139,6 +139,7 @@ export default function ProjectsPage() {
       {projects.map((i, index) => {
         return (
           <div
+            key={index}
             className={
               "flex border rounded p-1 " +
               (index % 2 === 0

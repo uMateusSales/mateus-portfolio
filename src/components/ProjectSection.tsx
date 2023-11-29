@@ -103,6 +103,36 @@ export default function ProjectsSection() {
       ],
     },
     {
+      titulo: "Loja de moda fashion",
+      link: "https://https://loja-modelo-mateus.vercel.app/",
+      desc: "Showcase mostrando uma loja de roupas utilizando a API gerada pelo CMS do dono de loja, consumindo a API gerada e criando seu front do ecommerce online. Com filtros para cada tipo de roupa e tamanhoo. Apresentando também reponsivo para mobile",
+      videoLink: "",
+      fotos: [
+        "/fashion-front.png",
+        "/fashion-categoria.png",
+        "/fashion-mobile.png",
+        "/fashion-carrinho.png",
+      ],
+      tecnologias: [
+        {
+          nome: "React",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+          nome: "Nextjs 13",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        },
+        {
+          nome: "Typescript",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
+        },
+        {
+          nome: "TailwindCSS",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        },
+      ],
+    },
+    {
       titulo: "Pagina do purificador Clarifion",
       link: "https://clarifion-upsell-ejam-mateus.vercel.app/",
       desc: "Teste para vaga de fullstack aplicado pela Ejam, trata-se de uma pagina para procedimento de pagamento do produto e a proposta era melhorar a UI para gerar um desejo de upsell melhor para o produto",
@@ -127,6 +157,28 @@ export default function ProjectsSection() {
         },
       ],
     },
+    {
+      titulo: "DT Money - Rocketseat ignite",
+      link: "https://github.com/uMateusSales/dtmoney-rocketseat",
+      desc: "Projeto realizado durante o curso de desenvolvimento front end com React da Rocketseat no qual podemos criar novas trasnsações bancarias e receber o extrato, feito com intuito de melhorar a performance da aplicação através de bons usos do React Hooks",
+      videoLink: "",
+      fotos: ["/dt-front.png", "/dt-modal.png", "/dt-form.png"],
+      tecnologias: [
+        {
+          nome: "React",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+
+        {
+          nome: "Typescript",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
+        },
+        {
+          nome: "Styled-Components",
+          logo: "/styled-components-1.svg",
+        },
+      ],
+    },
   ];
 
   return (
@@ -140,6 +192,7 @@ export default function ProjectsSection() {
       {projects.map((i, index) => {
         return (
           <div
+            key={index}
             className={
               "flex border rounded p-1 " +
               (index % 2 === 0
