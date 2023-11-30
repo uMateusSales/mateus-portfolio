@@ -1,4 +1,5 @@
 import React from "react";
+import { Separator } from "./ui/separator";
 
 export default function DescriptionMap() {
   const links = [
@@ -50,11 +51,15 @@ export default function DescriptionMap() {
             className="relative group overflow-hidden  flex items-center gap-1.5 flex-wrap text-xs sm:text-sm"
             key={i.name}
           >
+            <Separator />
             <p>
               <b>{i.name}</b>
             </p>
             {i.content.map((i) => (
-              <p key={i}>{i}</p>
+              <div key={i}>
+                <p key={i}>{i}</p>
+                <Separator />
+              </div>
             ))}
             <div className="bg-purple-400 duration-500 group-hover:translate-x-full h-0.5 w-full absolute right-full bottom-0"></div>
           </div>

@@ -1,10 +1,9 @@
-import Link from "next/link";
 import "./globals.css";
-import { Poppins, Rajdhani } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const poppins = Rajdhani({
+const fonte = Rajdhani({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
 });
@@ -12,7 +11,7 @@ const poppins = Rajdhani({
 export const metadata = {
   title: "Mateus Sales",
   description:
-    "Sou Mateus Lins Sales, desenvolvedor front end e este é meu site portfolio com meus sistemas e sites ja feitos",
+    "Sou Mateus Lins Sales, desenvolvedor front end e este é meu site de portfolio de trabalhos e projetos",
 };
 
 export default function RootLayout({
@@ -30,10 +29,13 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <link rel="icon" href="/favicon.ico" />
       </head>
+
       <body
         className={
-          "min-h-screen flex flex-col text-slate-700 " + poppins.className
+          "min-h-screen flex flex-col text-slate-700 bg-purple-100 " +
+          fonte.className
         }
       >
         <Header />

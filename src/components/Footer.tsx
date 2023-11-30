@@ -13,13 +13,7 @@ const Footer = () => {
           Meu curriculo
         </a>
         <p>|</p>
-        <Link
-          href={"/projects"}
-          className="cursor-pointer hover:opacity-60 duration-200"
-        >
-          Projetos
-        </Link>
-        <p>|</p>
+
         <a className="cursor-pointer hover:opacity-60 duration-200">Blog</a>
       </div>
       <div className="flex items-center justify-center gap-4 text-lg sm:text-xl">

@@ -5,8 +5,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import TechLogos from "./ui/TechLogos";
 import { Tecnologia } from "@/app/projects/page";
@@ -29,22 +29,30 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
   return (
     <>
       <Swiper
-        className="flex min-h-[350px] max-w-full  sm:flex sm:flex-1 relative"
-        modules={[Pagination]}
+        className=" min-h-[350px] max-w-full  flex-1 relative"
+        modules={[Pagination, Autoplay]}
         spaceBetween={10}
+        autoplay={true}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         navigation
         pagination={true}
         loop={true}
+        observer={true}
+        observeSlideChildren={true}
+        onSwiper={(swiper) => {
+          setTimeout(() => {
+            console.log("update");
+            swiper.updateSize();
+          }, 5000);
+        }}
       >
         {fotos?.map((i) => (
-          <SwiperSlide key={i} className="min-h-[350px] mr-0 ">
+          <SwiperSlide key={i} className="min-h-[350px] max-w-full mr-0">
             <div className="flex">
               <Image
+                priority={true}
+                sizes={"(max-width: 640px) 100vw "}
                 fill
-                quality={95}
                 style={{ objectFit: "scale-down" }}
                 alt={i}
                 src={i}

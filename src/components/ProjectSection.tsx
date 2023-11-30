@@ -1,4 +1,5 @@
 import { ProjectCard } from "@/components/ProjectCard";
+import { Separator } from "./ui/separator";
 
 export type Project = {
   titulo: string;
@@ -84,7 +85,7 @@ export default function ProjectsSection() {
     {
       titulo: "Landing page da NerdWeb",
       link: "https://github.com/uMateusSales/teste-nerdweb",
-      desc: "asfdsdjf kha sdfjkh asdlkjfh aljksdh flakjsdh fkjlash dfkljha sdkjfh aslkjdhfalkj dfkaj sdhfkjas hdfkljahs dklfjahsdkljf haskjldfh aksljdhfkljasd hflkajshdf jkasdhflkjas dhfklja hsdfkljah sdlkfjh asldkjfhalksjdf halkjsd fhklajsdhfkljas dhfjklah sdflkajhs dflkjahs dfklajsdhfkjah sdfkjlash df",
+      desc: "Realização do teste técnico para front-end da empresa Nerdweb, onde o desafio seria recriar a propia pagina deles utilizando apenas Javascript vanilla,CSS e a api SwiperJS para animções",
       videoLink: "video.mov",
       fotos: ["/nerd-front.png", "/nerd-2.png", "/nerd-3.png", "/nerd-4.png"],
       tecnologias: [
@@ -182,13 +183,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <main className="flex flex-col flex-1 bg-slate-50-100 m-2">
-      <div className="flex justify-center my-8">
-        <h1 className="text-3xl font-extrabold">
-          Projetos mais recentes em que trabalhei
-        </h1>
-      </div>
-
+    <article className="flex flex-col  bg-slate-50-100 m-2">
       {projects.map((i, index) => {
         return (
           <div
@@ -201,7 +196,6 @@ export default function ProjectsSection() {
             }
           >
             <ProjectCard
-              key={index}
               titulo={i.titulo}
               desc={i.desc}
               link={i.link}
@@ -211,6 +205,6 @@ export default function ProjectsSection() {
           </div>
         );
       })}
-    </main>
+    </article>
   );
 }

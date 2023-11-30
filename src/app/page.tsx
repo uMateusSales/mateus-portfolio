@@ -2,6 +2,7 @@ import DescriptionMap from "@/components/DescriptionMap";
 import MainTitle from "@/components/MainTitle";
 
 import ProjectsSection from "@/components/ProjectSection";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
         <h4 className="pb-5 text-xl font-semibold">Skills</h4>
         <DescriptionMap />
       </section>
+      <Separator />
       <section>
+        <h4 className="pb-5 text-xl font-semibold">Projetos que ja fiz:</h4>
         <ProjectsSection />
       </section>
     </main>
