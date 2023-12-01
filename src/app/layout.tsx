@@ -12,6 +12,7 @@ export const metadata = {
   title: "Mateus Sales",
   description:
     "Sou Mateus Lins Sales, desenvolvedor front end e este é meu site de portfolio de trabalhos e projetos",
+  icons: { icon: "/favicon.com" },
 };
 
 export default function RootLayout({
@@ -29,7 +30,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link rel="icon" href="./favicon.ico"></link>
+        <link rel="icon" href="/favicon.ico" sizes="any"></link>
       </head>
 
       <body
