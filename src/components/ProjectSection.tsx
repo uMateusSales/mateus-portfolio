@@ -105,7 +105,7 @@ export default function ProjectsSection() {
     },
     {
       titulo: "Loja de moda fashion",
-      link: "https://https://loja-modelo-mateus.vercel.app/",
+      link: "https://loja-modelo-mateus.vercel.app/",
       desc: "Showcase mostrando uma loja de roupas utilizando a API gerada pelo CMS do dono de loja, consumindo a API gerada e criando seu front do ecommerce online. Com filtros para cada tipo de roupa e tamanhoo. Apresentando também reponsivo para mobile",
       videoLink: "",
       fotos: [
@@ -167,6 +167,34 @@ export default function ProjectsSection() {
       tecnologias: [
         {
           nome: "React",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+
+        {
+          nome: "Typescript",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
+        },
+        {
+          nome: "Styled-Components",
+          logo: "/styled-components-1.svg",
+        },
+      ],
+    },
+    {
+      titulo: "Market App - Lista inteligente para supermercados",
+      link: "https://github.com/matmelous/marketapp/commit/71dfee8c1feb2d12d809d46f84b22cad973c50ff",
+      desc: "App mobile feito para criar uma lista inteligente baseada nos valores de mercados proximos em que fiz parte do time de desenvolvimento, contruibuindo para a montagem de telas e melhoramentos de feedback na UI para o usuario ",
+      videoLink: "",
+      fotos: [
+        "/marketapp-front.png",
+        "/marketapp-first-page.png",
+        "/marketapp-login.png",
+        "/marketapp-lista.png",
+        "/marketapp-resultado.png",
+      ],
+      tecnologias: [
+        {
+          nome: "React Native",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
 
