@@ -29,7 +29,7 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
   return (
     <>
       <Swiper
-        className=" min-h-[350px] max-w-full  flex-1 relative"
+        className=" min-h-[350px] max-w-full  flex-1 "
         modules={[Pagination, Autoplay]}
         spaceBetween={10}
         autoplay={true}
@@ -42,13 +42,13 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
         onSwiper={(swiper) => {
           setTimeout(() => {
             console.log("update");
-            swiper.updateSize();
+            swiper.update();
           }, 5000);
         }}
       >
         {fotos?.map((i) => (
-          <SwiperSlide key={i} className="min-h-[350px] max-w-full mr-0">
-            <div className="flex">
+          <SwiperSlide key={i} className=" mr-0">
+            <div className="flex relative min-h-[350px] max-w-full">
               <Image
                 priority={true}
                 sizes={"(max-width: 640px) 100vw "}
@@ -56,8 +56,6 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
                 style={{ objectFit: "scale-down" }}
                 alt={i}
                 src={i}
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNsrAcAAYcBArSMKU4AAAAASUVORK5CYII="
               />
             </div>
           </SwiperSlide>

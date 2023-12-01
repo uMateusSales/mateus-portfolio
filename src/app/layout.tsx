@@ -29,7 +29,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon.ico"></link>
       </head>
 
       <body
