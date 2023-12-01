@@ -39,16 +39,10 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
         loop={true}
         observer={true}
         observeSlideChildren={true}
-        onSwiper={(swiper) => {
-          setTimeout(() => {
-            console.log("update");
-            swiper.update();
-          }, 5000);
-        }}
       >
         {fotos?.map((i) => (
           <SwiperSlide key={i} className=" mr-0">
-            <div className="flex relative min-h-[350px] max-w-full">
+            <div className="flex relative min-w-[300px] min-h-[350px] max-w-full">
               <Image
                 priority={true}
                 sizes={"(max-width: 640px) 100vw "}
