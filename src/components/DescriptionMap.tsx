@@ -20,14 +20,14 @@ export default function DescriptionMap() {
   const skills = [
     {
       name: "Linguagens",
-      content: ["Javascript", "Typescript"],
+      content: ["Javascript,", "Typescript"],
     },
     {
       name: "Front-end",
       content: [
-        "React",
-        "Nextjs 13",
-        "React Hooks",
+        "React,",
+        "Nextjs 13,",
+        "React Hooks,",
         "Redux toolkit e Zustand",
 
         ,
@@ -39,7 +39,7 @@ export default function DescriptionMap() {
     },
     {
       name: "Design",
-      content: ["TailwindCSS", "Styled-components", "MaterialUI", "Figma"],
+      content: ["TailwindCSS,", "Styled-components,", "MaterialUI,", "Figma"],
     },
   ];
 
@@ -52,12 +52,14 @@ export default function DescriptionMap() {
             key={i.name}
           >
             <Separator />
-            <p>
+            <p className="text-lg">
               <b>{i.name}</b>
             </p>
             {i.content.map((i) => (
               <div key={i}>
-                <p key={i}>{i}</p>
+                <p className="font-medium text-base" key={i}>
+                  {i}
+                </p>
                 <Separator />
               </div>
             ))}

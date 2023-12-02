@@ -42,8 +42,8 @@ const MainTitle: React.FC<MainTitleProps> = ({ titulo, subtitulo }) => {
       <CardContent>
         <div className="flex mt-2 self-center">
           <Image
-            alt="notebook"
-            style={{ objectFit: "contain", borderRadius: 5 }}
+            alt="minha foto"
+            style={{ objectFit: "scale-down", borderRadius: 5 }}
             src="/ai-print.png"
             width={500}
             height={500}

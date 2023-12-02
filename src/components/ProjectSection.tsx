@@ -47,6 +47,10 @@ export default function ProjectsSection() {
           nome: "TailwindCSS",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
         },
+        {
+          nome: "Git",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        },
       ],
     },
     {
@@ -85,7 +89,7 @@ export default function ProjectsSection() {
     {
       titulo: "Landing page da NerdWeb",
       link: "https://github.com/uMateusSales/teste-nerdweb",
-      desc: "Realização do teste técnico para front-end da empresa Nerdweb, onde o desafio seria recriar a propia pagina deles utilizando apenas Javascript vanilla,CSS e a api SwiperJS para animções",
+      desc: "Realização do teste técnico para front-end da empresa Nerdweb, onde o desafio seria recriar a propia pagina deles utilizando apenas Javascript vanilla,CSS e a API SwiperJS para animções",
       videoLink: "video.mov",
       fotos: ["/nerd-front.png", "/nerd-2.png", "/nerd-3.png", "/nerd-4.png"],
       tecnologias: [
@@ -100,6 +104,10 @@ export default function ProjectsSection() {
         {
           nome: "CSS",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg",
+        },
+        {
+          nome: "Git",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         },
       ],
     },
@@ -131,6 +139,10 @@ export default function ProjectsSection() {
           nome: "TailwindCSS",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
         },
+        {
+          nome: "Git",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        },
       ],
     },
     {
@@ -156,6 +168,10 @@ export default function ProjectsSection() {
           nome: "TailwindCSS",
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
         },
+        {
+          nome: "Git",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        },
       ],
     },
     {
@@ -177,6 +193,10 @@ export default function ProjectsSection() {
         {
           nome: "Styled-Components",
           logo: "/styled-components-1.svg",
+        },
+        {
+          nome: "Git",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         },
       ],
     },
@@ -206,6 +226,18 @@ export default function ProjectsSection() {
           nome: "Styled-Components",
           logo: "/styled-components-1.svg",
         },
+        {
+          nome: "Nest.js",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
+        },
+        {
+          nome: "MySQL",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg",
+        },
+        {
+          nome: "Git",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        },
       ],
     },
   ];
@@ -217,7 +249,7 @@ export default function ProjectsSection() {
           <div
             key={index}
             className={
-              "flex border rounded p-1 min-h-[350px] " +
+              "flex border rounded gap-3 p-1 min-h-[350px] " +
               (index % 2 === 0
                 ? "flex-col sm:flex-row"
                 : "flex-col sm:flex-row-reverse")

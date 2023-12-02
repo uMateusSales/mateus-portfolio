@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 const Footer = () => {
   return (
     <footer className=" bg-slate-400 flex flex-col  p-4 py-16 text-xs text-neutral-950 sm:text-sm border-t items-center justify-center gap-6">
@@ -14,7 +13,13 @@ const Footer = () => {
         </a>
         <p>|</p>
 
-        <a className="cursor-pointer hover:opacity-60 duration-200">Blog</a>
+        <a
+          href="https://www.linkedin.com/in/mateus-lins-061a5424a"
+          className="cursor-pointer hover:opacity-60 duration-200"
+          target="_blank"
+        >
+          Contato
+        </a>
       </div>
       <div className="flex items-center justify-center gap-4 text-lg sm:text-xl">
         <a
