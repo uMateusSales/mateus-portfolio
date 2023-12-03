@@ -13,7 +13,7 @@ const TechLogos: React.FC<TechLogoProps> = ({ tecnologia }) => {
           key={i.nome}
           className="flex flex-col gap-1 shadow rounded-xl p-2 items-center"
         >
-          <Image alt="logo" width={32} height={32} src={i.logo} />
+          <Image alt={i.nome} width={32} height={32} src={i.logo} />
           <p className="text-xs font-semibold text-center">{i.nome}</p>
         </div>
       ))}

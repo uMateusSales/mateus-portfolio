@@ -42,7 +42,7 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
       >
         {fotos?.map((i) => (
           <SwiperSlide key={i} className=" mr-0">
-            <div className="flex relative min-w-[300px] min-h-[350px] max-w-full">
+            <div className="flex relative min-w-[300px] min-h-[350px]">
               <Image
                 priority={true}
                 sizes={"(max-width: 640px) 100vw "}
