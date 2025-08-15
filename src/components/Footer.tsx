@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="flex items-center justify-center gap-4">
         <a
           download
-          href={"/MateusCurriculo.pdf"}
+          href={"/Curriculo.pdf"}
           className="cursor-pointer hover:opacity-60 duration-200"
         >
           {" "}
