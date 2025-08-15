@@ -38,6 +38,10 @@ export default function DescriptionMap() {
       content: ["Nodejs, Fastify, Express, Nestjs"],
     },
     {
+      name: "Bando de dados",
+      content: ["MySQL, PostgreeSQL, MongoDB"],
+    },
+    {
       name: "Design",
       content: ["TailwindCSS,", "Styled-components,", "MaterialUI,", "Figma"],
     },
