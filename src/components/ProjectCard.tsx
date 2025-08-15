@@ -61,11 +61,11 @@ export const ProjectCard: React.FC<ProjeactCardProps> = ({
         className="flex flex-col flex-1 justify-center items-center  "
       >
         <Link
-          className="transition-opacity  ease-in duration-300 opacity-100 hover:opacity-60  p-4 sm:p-6"
+          className="transition-opacity  ease-in duration-300 opacity-100  hover:opacity-60  p-4 sm:p-6"
           href={link}
           target="_blank"
         >
-          <h2 className="text-center text-2xl p-1 sm:text-3xl hover:bg-neutral-100 hover:outline shadow rounded md:text-4xl font-semibold">
+          <h2 className="text-center text-2xl p-1 sm:text-3xl hover:bg-neutral-100 hover:outline shadow-2xl rounded md:text-4xl font-semibold border-black border-spacing-1 border ">
             {titulo}
           </h2>
         </Link>
