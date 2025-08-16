@@ -3,6 +3,7 @@ import { Rajdhani } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const fonte = Rajdhani({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
 
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
