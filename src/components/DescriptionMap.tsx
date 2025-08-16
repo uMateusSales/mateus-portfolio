@@ -2,12 +2,10 @@ import React from "react";
 import { Separator } from "./ui/separator";
 import { cn } from "@/lib/utils";
 
-// Adicionamos uma interface para tipar a prop
 interface DescriptionMapProps {
   isAnimating?: boolean;
 }
 
-// O componente agora recebe a prop 'isAnimating'
 export default function DescriptionMap({ isAnimating }: DescriptionMapProps) {
   const links = [
     {
@@ -53,16 +51,12 @@ export default function DescriptionMap({ isAnimating }: DescriptionMapProps) {
     },
   ];
 
-  // Classes de animação condicionais
   const animationClasses = isAnimating
-    ? "opacity-0 translate-y-5" // Começa invisível e 5px para baixo
-    : "opacity-100 translate-y-0"; // Fica visível e retorna para a posição original
-
-  // Classes de transição
+    ? "opacity-0 translate-y-10"
+    : "opacity-100 translate-y-0";
   const transitionClasses = "transition-all duration-700 ease-out";
 
   return (
-    // Adicionamos as classes de animação e transição ao container principal
     <div
       className={cn("flex flex-col gap-3", animationClasses, transitionClasses)}
     >

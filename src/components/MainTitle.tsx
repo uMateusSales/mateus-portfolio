@@ -14,7 +14,7 @@ import { Separator } from "@radix-ui/react-separator";
 interface MainTitleProps {
   titulo: string;
   subtitulo: string;
-  isAnimating?: boolean; // Adicionada a prop para controlar a animação
+  isAnimating?: boolean;
 }
 
 const MainTitle: React.FC<MainTitleProps> = ({
@@ -22,12 +22,10 @@ const MainTitle: React.FC<MainTitleProps> = ({
   subtitulo,
   isAnimating,
 }) => {
-  // Classes de animação condicionais
   const animationClasses = isAnimating
-    ? "transform scale-75 opacity-0" // Estado inicial
-    : "transform scale-100 opacity-100"; // Estado final
+    ? "transform scale-75 opacity-0"
+    : "transform scale-100 opacity-100";
 
-  // Classes de transição
   const transitionClasses = "transition-all duration-700 ease-in-out";
 
   return (

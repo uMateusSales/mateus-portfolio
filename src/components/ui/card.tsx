@@ -4,13 +4,11 @@ import { cn } from "@/lib/utils";
 
 const Card = React.forwardRef<
   HTMLDivElement,
-  // Adicionamos a prop 'isAnimating' para controlar o estado
   React.HTMLAttributes<HTMLDivElement> & { isAnimating?: boolean }
 >(({ className, isAnimating, ...props }, ref) => {
-  // Define as classes de animação com base na prop
   const animationClasses = isAnimating
-    ? "transform scale-75 opacity-0" // Estado inicial: pequeno e invisível
-    : "transform scale-100 opacity-100"; // Estado final: tamanho original e visível
+    ? "transform scale-75 opacity-0"
+    : "transform scale-100 opacity-100";
 
   // Define as classes de transição
   const transitionClasses = "transition-all duration-700 ease-in-out";
