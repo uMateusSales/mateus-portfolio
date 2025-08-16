@@ -39,7 +39,7 @@ export default function DescriptionMap() {
     },
     {
       name: "Bando de dados",
-      content: ["MySQL, PostgreeSQL, MongoDB"],
+      content: ["MySQL, PostgreeSQL, MongoDB", "Prisma"],
     },
     {
       name: "Design",

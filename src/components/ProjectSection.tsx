@@ -45,7 +45,7 @@ export default function ProjectsSection() {
 
         {
           nome: "TailwindCSS",
-          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
         },
         {
           nome: "Git",
