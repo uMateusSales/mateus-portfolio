@@ -40,9 +40,9 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <Analytics />
 
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
