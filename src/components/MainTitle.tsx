@@ -56,8 +56,8 @@ const MainTitle: React.FC<MainTitleProps> = ({
         <div className="flex mt-2 self-center">
           <Image
             alt="minha foto"
-            style={{ objectFit: "scale-down", borderRadius: 5 }}
-            src="/mateus.png"
+            style={{ objectFit: "inherit", borderRadius: 5 }}
+            src="/mateus-2.png"
             width={500}
             height={500}
           />
