@@ -7,25 +7,10 @@ interface DescriptionMapProps {
 }
 
 export default function DescriptionMap({ isAnimating }: DescriptionMapProps) {
-  const links = [
-    {
-      name: "Email",
-      content: "jamesmca@live.com",
-      link: "https://www.google.com",
-    },
-    { name: "GitHub", content: "jamezmca", link: "https://www.google.com" },
-    {
-      name: "LinkedIn",
-      content: "jamezmcarthur",
-      link: "https://www.google.com",
-    },
-    { name: "YouTube", content: "smoljames", link: "https://www.google.com" },
-  ];
-
   const skills = [
     {
       name: "Linguagens",
-      content: ["Javascript,", "Typescript"],
+      content: ["Javascript,", "Typescript", "Python"],
     },
     {
       name: "Front-end",
@@ -34,7 +19,6 @@ export default function DescriptionMap({ isAnimating }: DescriptionMapProps) {
         "Nextjs 13,",
         "React Hooks,",
         "Redux toolkit e Zustand",
-        "",
       ],
     },
     {

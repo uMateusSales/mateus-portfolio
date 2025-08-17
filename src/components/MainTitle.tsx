@@ -57,7 +57,7 @@ const MainTitle: React.FC<MainTitleProps> = ({
           <Image
             alt="minha foto"
             style={{ objectFit: "scale-down", borderRadius: 5 }}
-            src="/ai-print.png"
+            src="/mateus.png"
             width={500}
             height={500}
           />

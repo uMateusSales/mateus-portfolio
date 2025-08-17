@@ -10,7 +10,6 @@ const Card = React.forwardRef<
     ? "transform scale-75 opacity-0"
     : "transform scale-100 opacity-100";
 
-  // Define as classes de transição
   const transitionClasses = "transition-all duration-700 ease-in-out";
 
   return (
