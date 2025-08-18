@@ -249,7 +249,7 @@ export default function ProjectsSection() {
           <div
             key={index}
             className={
-              "flex border rounded gap-3 p-1 min-h-[350px] " +
+              "flex border rounded gap-3 p-1 min-h-[350px] max-w-[1080] " +
               (index % 2 === 0
                 ? "flex-col sm:flex-row"
                 : "flex-col sm:flex-row-reverse")
